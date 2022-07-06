@@ -1,0 +1,259 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// --- parameters to test and modify ---
+
+cellsInZ 24;
+simpleGradingZ 36;
+
+cellsRadialToCylinder 44;
+
+// -------------------------------------
+
+
+convertToMeters 0.1;
+
+vertices
+(
+   	(-12.5 6  0.0)			//0 
+	(-3.182 6  0.0)  		//1
+	(3.182 6  0.0)			//2
+	(12.5 6  0.0)			//3
+
+	(-12.5 3.182  0.0)		//4
+	(-3.182 3.182  0.0)		//5
+	(3.182 3.182  0.0)		//6
+	(12.5 3.182  0.0)		//7
+
+	(-0.3535 0.3535  0.0)		//8 
+	(0.3535 0.3535  0.0)		//9
+	(-0.3535 -0.3535  0.0)		//10
+	(0.3535 -0.3535  0.0)		//11
+
+	(-12.5 -3.182  0.0)		//12
+	(-3.182 -3.182  0.0)		//13
+	(3.182 -3.182  0.0)		//14
+	(12.5 -3.182  0.0)		//15
+
+   	(-12.5 -6  0.0)			//16
+	(-3.182 -6  0.0)  		//17
+	(3.182 -6  0.0)			//18
+	(12.5 -6  0.0)			//19
+
+
+   	(-12.5 6 1.5)			//20 
+	(-3.182 6 1.5)  		//21
+	(3.182 6 1.5)			//22
+	(12.5 6 1.5)			//23
+
+	(-12.5 3.182 1.5)		//24
+	(-3.182 3.182 1.5)		//25
+	(3.182 3.182 1.5)		//26
+	(12.5 3.182 1.5)		//27
+
+	(-0.3535 0.3535 1.5)		//28
+	(0.3535 0.3535 1.5)		//29
+	(-0.3535 -0.3535 1.5)		//30
+	(0.3535 -0.3535 1.5)		//31
+
+	(-12.5 -3.182 1.5)		//32
+	(-3.182 -3.182 1.5)		//33
+	(3.182 -3.182 1.5)		//34
+	(12.5 -3.182 1.5)		//35
+
+   	(-12.5 -6 1.5)			//36
+	(-3.182 -6 1.5)  		//37
+	(3.182 -6 1.5)			//38
+	(12.5 -6 1.5)			//39
+
+
+);
+
+
+blocks
+(
+    	hex ( 4 5 1 0 24 25 21 20 ) (35 21 $cellsInZ) 					//Block (0)	
+	simpleGrading ( 0.3  ( (13.18 10 1) (15 16 0.625) )  $simpleGradingZ )
+
+    	hex ( 5 6 2 1 25 26 22 21 ) (40 21 $cellsInZ) 					//Block (I)
+	simpleGrading ( 1  ( (13.18 10 1) (15 16 0.625) )  $simpleGradingZ )
+
+    	hex ( 6 7 3 2 26 27 23 22 ) (52 21 $cellsInZ) 					//Block (II)
+	simpleGrading ( 1.25  ( (13.18 10 1) (15 16 0.625) )  $simpleGradingZ )
+
+    	hex ( 8 9 6 5 28 29 26 25 ) (40 $cellsRadialToCylinder $cellsInZ) 		//Block (III)
+	simpleGrading (1 5 $simpleGradingZ )
+
+    	hex ( 12 13 5 4 32 33 25 24 ) (35 40 $cellsInZ)				    	//Block (IV)
+	simpleGrading ( 0.3 1  $simpleGradingZ )
+  
+    	hex ( 13 10 8 5 33 30 28 25 ) ($cellsRadialToCylinder 40 $cellsInZ) 		//Block (V)
+	simpleGrading (0.2 1 $simpleGradingZ )	
+										
+
+    	hex ( 11 14 6 9 31 34 26 29 ) ($cellsRadialToCylinder 40 $cellsInZ)		//Block (VI)
+	simpleGrading (5 1 $simpleGradingZ )	
+	
+    	hex ( 14 15 7 6 34 35 27 26 ) (52 40 $cellsInZ) 				//Block (VII)
+	simpleGrading (1.25 1 $simpleGradingZ )
+		
+    	hex ( 13 14 11 10 33 34 31 30 ) (40 $cellsRadialToCylinder $cellsInZ) 		//Block (VIII)
+	simpleGrading (1 0.2 $simpleGradingZ )
+
+    	hex ( 16 17 13 12 36 37 33 32 ) (35 21 $cellsInZ)				//Block (IX)
+	simpleGrading ( 0.3  ( (15 16 1.6) (13.18 10 1) )  $simpleGradingZ )
+
+    	hex ( 17 18 14 13 37 38 34 33 ) (40 21 $cellsInZ) 				//Block (X)
+	simpleGrading ( 1  ( (15 16 1.6) (13.18 10 1) )  $simpleGradingZ )
+
+    	hex ( 18 19 15 14 38 39 35 34 ) (52 21 $cellsInZ) 				//Block (XI)
+	simpleGrading ( 1.25  ( (15 16 1.6) (13.18 10 1) )  $simpleGradingZ )
+
+);
+
+
+
+edges
+(
+					// arcs for cylinder
+    	arc 8 9 (0 0.5  0.0)		// arc a1
+	arc 29 28 (0 0.5 1.5)
+	arc 9 11 (0.5 0  0.0)		// arc a2
+	arc 31 29 (0.5 0 1.5)
+    	arc 11 10 (0 -0.5  0.0)		// arc a3
+	arc 30 31 (0 -0.5 1.5)
+    	arc 10 8 (-0.5 0  0.0)		// arc a4
+	arc 28 30 (-0.5 0 1.5)
+                                        // arcs for o-type mesh region
+	arc 5 6 (0 3.85  0.0)		// arc b1
+	arc 26 25 (0 3.85 1.5)
+	arc 6 14 (3.85 0  0.0)		// arc b2
+	arc 26 34 (3.85 0 1.5)
+	arc 13 14 (0 -3.85  0.0)	// arc b3
+	arc 33 34 (0 -3.85 1.5)
+	arc 5 13 (-3.85 0  0.0)		// arc b4
+	arc 25 33 (-3.85 0 1.5)
+
+);
+
+
+boundary
+(
+    inlet			// INLET i
+    {
+        type patch;
+        faces
+        (				
+            (0 4 24 20)			// i1
+            (4 12 32 24)		// i2
+            (12 16 36 32)		// i3
+        );
+    }
+
+
+
+    outlet 			// OUTLET o	
+    {
+        type patch;
+        faces
+        (
+            (7 3 23 27)			// o1
+            (15 7 27 35)		// o2
+            (19 15 35 39)		// o3
+        );
+    }
+
+
+    
+    roughCylinder		// ROUGH CYLINDER a
+    {
+        type wall;
+        faces
+        (
+            (8 9 29 28)			// a1
+            (9 11 31 29)		// a2
+            (11 10 30 31)		// a3
+            (10 8 28 30)		// a4
+        );
+    }
+
+
+
+    sideWall			// SIDE WALL w
+    {
+        type wall;
+        faces
+        (
+            (1 0 20 21)			// w1
+            (2 1 21 22)			// w2	
+            (3 2 22 23)			// w3
+            (18 19 39 38)		// w4
+	    (17 18 38 37)		// w5
+	    (16 17 37 36)		// w6
+        );
+    }
+
+
+
+    bottom			// BOTTOM (roman numbers)
+    {
+        type wall;
+        faces
+        (
+            (0 1 5 4)			// (0)
+            (1 2 6 5)			// (I)
+            (2 3 7 6)			// (II)
+            (5 6 9 8)			// (III)
+            (4 5 13 12)			// (IV)
+            (5 8 10 13)			// (V)
+
+            (9 6 14 11)			// (VI)
+            (6 7 15 14)			// (VII)
+            (10 11 14 13)		// (VIII)
+            (12 13 17 16)		// (IX)
+            (14 18 17 13)		// (X)
+            (15 19 18 14)		// (XI)	
+        );
+    }
+
+
+    top				// TOP (roman numbers)
+    {
+        type patch;
+        faces
+        (
+            (20 24 25 21)		// (0)
+            (21 25 26 22)		// (I)
+            (22 26 27 23)		// (II)
+            (25 28 29 26)		// (III)
+            (24 32 33 25)		// (IV)
+            (25 33 30 28)		// (V)
+
+            (26 29 31 34)		// (VI)
+            (27 26 34 35)		// (VII)
+            (30 33 34 31)		// (VIII)
+            (32 36 37 33)		// (IX)
+            (33 37 38 34)		// (X)
+            (34 38 39 35)		// (XI)	
+        );
+    }
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //
