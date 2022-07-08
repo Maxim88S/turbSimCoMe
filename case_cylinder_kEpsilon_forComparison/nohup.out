@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-eb0ce5d792a1
+Exec   : pisoFoam -postProcess -func wallShearStress
+Date   : Jul 08 2022
+Time   : 11:09:23
+Host   : "hyd37"
+PID    : 63582
+I/O    : uncollated
+Case   : /students/rtanuharja/turbSimCoMe/case_cylinder_kEpsilon_forComparison
+nProcs : 1
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
