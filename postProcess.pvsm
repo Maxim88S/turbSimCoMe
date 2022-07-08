@@ -2,7 +2,7 @@
   <ServerManagerState version="5.10.1">
     <Proxy group="animation" type="AnimationScene" id="261" servers="16">
       <Property name="AnimationTime" id="261.AnimationTime" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
       </Property>
       <Property name="Cues" id="261.Cues" number_of_elements="1">
         <Proxy value="263"/>
@@ -63683,7 +63683,7 @@
     <Proxy group="misc" type="TimeKeeper" id="256" servers="16">
       <Property name="SuppressedTimeSources" id="256.SuppressedTimeSources"/>
       <Property name="Time" id="256.Time" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
         <Domain name="range" id="256.Time.range"/>
       </Property>
       <Property name="TimeLabel" id="256.TimeLabel" number_of_elements="1">
@@ -64004,7 +64004,7 @@
         <Domain name="bool" id="19141.LeftAxisLogScale.bool"/>
       </Property>
       <Property name="LeftAxisRangeMaximum" id="19141.LeftAxisRangeMaximum" number_of_elements="1">
-        <Element index="0" value="0.07"/>
+        <Element index="0" value="0.1"/>
       </Property>
       <Property name="LeftAxisRangeMinimum" id="19141.LeftAxisRangeMinimum" number_of_elements="1">
         <Element index="0" value="0.05"/>
@@ -64370,7 +64370,7 @@
         <Element index="1" value="512"/>
       </Property>
       <Property name="ViewTime" id="19141.ViewTime" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
         <Domain name="range" id="19141.ViewTime.range"/>
       </Property>
     </Proxy>
@@ -64586,10 +64586,10 @@
         <Domain name="bool" id="19356.LeftAxisLogScale.bool"/>
       </Property>
       <Property name="LeftAxisRangeMaximum" id="19356.LeftAxisRangeMaximum" number_of_elements="1">
-        <Element index="0" value="450"/>
+        <Element index="0" value="250"/>
       </Property>
       <Property name="LeftAxisRangeMinimum" id="19356.LeftAxisRangeMinimum" number_of_elements="1">
-        <Element index="0" value="-140"/>
+        <Element index="0" value="-100"/>
       </Property>
       <Property name="LeftAxisTitle" id="19356.LeftAxisTitle" number_of_elements="1">
         <Element index="0" value="du/dr"/>
@@ -64952,7 +64952,7 @@
         <Element index="1" value="488"/>
       </Property>
       <Property name="ViewTime" id="19356.ViewTime" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
         <Domain name="range" id="19356.ViewTime.range"/>
       </Property>
     </Proxy>
@@ -65535,7 +65535,7 @@
         <Element index="1" value="488"/>
       </Property>
       <Property name="ViewTime" id="19593.ViewTime" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
         <Domain name="range" id="19593.ViewTime.range"/>
       </Property>
     </Proxy>
@@ -66070,7 +66070,7 @@
         <Element index="1" value="512"/>
       </Property>
       <Property name="ViewTime" id="18996.ViewTime" number_of_elements="1">
-        <Element index="0" value="48"/>
+        <Element index="0" value="50"/>
         <Domain name="range" id="18996.ViewTime.range"/>
       </Property>
       <Property name="VolumeAnisotropy" id="18996.VolumeAnisotropy" number_of_elements="1">
