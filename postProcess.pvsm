@@ -5498,9 +5498,9 @@
         <Element index="2" value="   (3)"/>
         <Element index="3" value="2"/>
         <Element index="4" value="  (2)"/>
-        <Element index="5" value="2"/>
+        <Element index="5" value="4"/>
         <Element index="6" value="  (3)"/>
-        <Element index="7" value="2"/>
+        <Element index="7" value="4"/>
         <Element index="8" value="Points_Magnitude (2)"/>
         <Element index="9" value="2"/>
         <Element index="10" value="Points_Magnitude (3)"/>
@@ -8473,9 +8473,9 @@
         <Element index="4" value="   (internalMesh)"/>
         <Element index="5" value="2"/>
         <Element index="6" value="  (2)"/>
-        <Element index="7" value="2"/>
+        <Element index="7" value="4"/>
         <Element index="8" value="  (3)"/>
-        <Element index="9" value="2"/>
+        <Element index="9" value="4"/>
         <Element index="10" value="Points_Magnitude (2)"/>
         <Element index="11" value="2"/>
         <Element index="12" value="Points_Magnitude (3)"/>
@@ -10944,9 +10944,9 @@
         <Element index="178" value="wallShearStress_Z (internalMesh)"/>
         <Element index="179" value="2"/>
         <Element index="180" value="yPlus (2)"/>
-        <Element index="181" value="2"/>
+        <Element index="181" value="4"/>
         <Element index="182" value="yPlus (3)"/>
-        <Element index="183" value="2"/>
+        <Element index="183" value="4"/>
         <Element index="184" value="yPlus (internalMesh)"/>
         <Element index="185" value="2"/>
         <Domain name="array_list" id="20437.SeriesLineThickness.array_list">
@@ -13221,9 +13221,9 @@
         <Element index="178" value="wallShearStress_Z (internalMesh)"/>
         <Element index="179" value="2"/>
         <Element index="180" value="yPlus (2)"/>
-        <Element index="181" value="2"/>
+        <Element index="181" value="4"/>
         <Element index="182" value="yPlus (3)"/>
-        <Element index="183" value="2"/>
+        <Element index="183" value="4"/>
         <Element index="184" value="yPlus (internalMesh)"/>
         <Element index="185" value="2"/>
         <Domain name="array_list" id="20514.SeriesLineThickness.array_list">
@@ -15498,9 +15498,9 @@
         <Element index="178" value="wallShearStress_Z (internalMesh)"/>
         <Element index="179" value="2"/>
         <Element index="180" value="yPlus (2)"/>
-        <Element index="181" value="2"/>
+        <Element index="181" value="4"/>
         <Element index="182" value="yPlus (3)"/>
-        <Element index="183" value="2"/>
+        <Element index="183" value="4"/>
         <Element index="184" value="yPlus (internalMesh)"/>
         <Element index="185" value="2"/>
         <Domain name="array_list" id="20597.SeriesLineThickness.array_list">
@@ -17595,9 +17595,9 @@
       </Property>
       <Property name="SeriesLineThickness" id="19439.SeriesLineThickness" number_of_elements="186">
         <Element index="0" value="   (2)"/>
-        <Element index="1" value="2"/>
+        <Element index="1" value="4"/>
         <Element index="2" value="   (3)"/>
-        <Element index="3" value="2"/>
+        <Element index="3" value="4"/>
         <Element index="4" value="   (internalMesh)"/>
         <Element index="5" value="2"/>
         <Element index="6" value="  (2)"/>
@@ -22257,9 +22257,9 @@
         <Element index="2" value="   (3)"/>
         <Element index="3" value="2"/>
         <Element index="4" value="  (2)"/>
-        <Element index="5" value="2"/>
+        <Element index="5" value="4"/>
         <Element index="6" value="  (3)"/>
-        <Element index="7" value="2"/>
+        <Element index="7" value="4"/>
         <Element index="8" value="Points_Magnitude (2)"/>
         <Element index="9" value="2"/>
         <Element index="10" value="Points_Magnitude (3)"/>
@@ -24570,9 +24570,9 @@
       </Property>
       <Property name="SeriesLineThickness" id="19510.SeriesLineThickness" number_of_elements="186">
         <Element index="0" value="   (2)"/>
-        <Element index="1" value="2"/>
+        <Element index="1" value="4"/>
         <Element index="2" value="   (3)"/>
-        <Element index="3" value="2"/>
+        <Element index="3" value="4"/>
         <Element index="4" value="   (internalMesh)"/>
         <Element index="5" value="2"/>
         <Element index="6" value="  (2)"/>
@@ -26302,7 +26302,7 @@
         <Element index="2" value="  "/>
         <Element index="3" value="2"/>
         <Element index="4" value="   "/>
-        <Element index="5" value="2"/>
+        <Element index="5" value="4"/>
         <Element index="6" value="Points_Magnitude"/>
         <Element index="7" value="2"/>
         <Element index="8" value="Points_X"/>
@@ -27313,7 +27313,7 @@
         <Element index="2" value="  "/>
         <Element index="3" value="2"/>
         <Element index="4" value="   "/>
-        <Element index="5" value="2"/>
+        <Element index="5" value="4"/>
         <Element index="6" value="Points_Magnitude"/>
         <Element index="7" value="2"/>
         <Element index="8" value="Points_X"/>
@@ -28340,7 +28340,7 @@
         <Element index="2" value="  "/>
         <Element index="3" value="2"/>
         <Element index="4" value="   "/>
-        <Element index="5" value="2"/>
+        <Element index="5" value="4"/>
         <Element index="6" value="Points_Magnitude"/>
         <Element index="7" value="2"/>
         <Element index="8" value="Points_X"/>
@@ -29948,9 +29948,9 @@
       </Property>
       <Property name="SeriesLineThickness" id="19344.SeriesLineThickness" number_of_elements="194">
         <Element index="0" value="   (2)"/>
-        <Element index="1" value="2"/>
+        <Element index="1" value="4"/>
         <Element index="2" value="   (3)"/>
-        <Element index="3" value="2"/>
+        <Element index="3" value="4"/>
         <Element index="4" value="  (2)"/>
         <Element index="5" value="2"/>
         <Element index="6" value="  (3)"/>
@@ -34969,8 +34969,8 @@
         </Domain>
       </Property>
       <Property name="LegendPosition" id="19593.LegendPosition" number_of_elements="2">
-        <Element index="0" value="0"/>
-        <Element index="1" value="0"/>
+        <Element index="0" value="812"/>
+        <Element index="1" value="409"/>
       </Property>
       <Property name="LegendSymbolWidth" id="19593.LegendSymbolWidth" number_of_elements="1">
         <Element index="0" value="25"/>
